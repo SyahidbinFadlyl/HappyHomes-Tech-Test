@@ -6,7 +6,101 @@
 body {
   background-color: #dfebf7;
 }
-@media only screen and (max-width: 576px) {
+
+@media screen and (min-width: 577px) {
+  .containerList {
+    text-align: center;
+    width: 100vw;
+    min-width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: min-content;
+  }
+
+  .containerProduct {
+    text-align: center;
+    margin: 30px;
+    border: 1 black;
+    width: 45vw;
+    background-color: rgb(249, 249, 249);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 12px 12px rgb(212, 212, 212);
+    height: fit-content;
+  }
+  .imageContainer {
+    padding: 20px;
+    border-bottom: 0.8px solid rgba(189, 189, 189, 0.87);
+  }
+  .img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .producTitle {
+    line-height: 1;
+    color: rgba(94, 86, 105, 0.87) !important;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.0125em;
+  }
+  .detail {
+    text-align: left;
+    padding: 20px;
+  }
+  .productDescription {
+    width: 90%;
+    text-align: left;
+    padding: 0px 20px 16px;
+  }
+  .productPrice {
+    font-weight: bold;
+  }
+  .addToChart {
+    margin-left: 10px;
+    padding-left: 8px;
+    color: rgba(28, 28, 28, 0.87);
+    font-weight: 400;
+    padding-top: 2px;
+    font-size: 1rem;
+  }
+  .icon {
+    width: 21px;
+    height: 22.5px;
+    color: rgba(94, 86, 105, 0.87);
+    margin-left: 8px;
+  }
+  .detail {
+    text-align: left;
+    padding: 20px;
+  }
+  .description {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.0071428571em;
+    color: rgba(94, 86, 105, 0.68) !important;
+  }
+  .tagPrice {
+    color: rgba(173, 16, 16, 0.87) !important;
+  }
+  .AddToChart {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-left: 12px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+  .shareIcon {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 576px) {
   .containerList {
     text-align: center;
     width: 100vw;
@@ -29,15 +123,12 @@ body {
     border-bottom: 0.8px solid rgba(189, 189, 189, 0.87);
   }
   .img {
-    height: 158px;
-    width: 220px;
-    max-height: 300px;
-    max-width: 250px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
   .producTitle {
     line-height: 1;
-    /* padding-top: 20px;
-    padding-bottom: 20px; */
     color: rgba(94, 86, 105, 0.87) !important;
     align-items: center;
     font-size: 1.25rem;
@@ -78,7 +169,7 @@ body {
     color: rgba(94, 86, 105, 0.68) !important;
   }
   .tagPrice {
-    color: rgba(94, 86, 105, 0.87) !important;
+    color: rgba(173, 16, 16, 0.87) !important;
   }
   .AddToChart {
     text-align: left;
