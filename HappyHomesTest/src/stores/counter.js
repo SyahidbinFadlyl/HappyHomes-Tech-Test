@@ -18,6 +18,6 @@ export const useCounterStore = defineStore({
       } catch (error) {
         console.log(error);
       }
-    }
+    },
   }
 });
