@@ -6,7 +6,9 @@
 body {
   background-color: #dfebf7;
 }
-
+#containerAdds {
+  text-align: center;
+}
 @media screen and (min-width: 577px) {
   .containerList {
     text-align: center;
@@ -15,6 +17,10 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     grid-auto-rows: min-content;
+  }
+
+  #adds {
+    width: 500px;
   }
 
   .containerProduct {

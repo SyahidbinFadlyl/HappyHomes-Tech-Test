@@ -12,11 +12,8 @@ const app = express();
 app.use(cors());
 app.get('/adds', async (req, res) => {
     try {
-
         const { data } = await axios.get("https://dummyjson.com/products?limit=5");
         const products = data.products;
-        const test = products[0];
-        // console.log(test);
         const clips = products.map(e => {
             return {
                 duration: 3,
@@ -34,7 +31,7 @@ app.get('/adds', async (req, res) => {
         });
         console.log(video);
         res.status(200).json({
-            
+
         });
     } catch (error) {
         console.log(error);
